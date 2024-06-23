@@ -4,7 +4,7 @@
     { "src": ".devcontainer/Dockerfile", "use": "@vercel/build-utils/docker" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "manage.py" }
+    { "src": "/(.*)", "dest": "web_project/manage.py" }
   ],
   "env": {
     "VERCEL_DOCKER_BUILDER": "vercel/python"
