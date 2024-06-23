@@ -1,8 +1,12 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": ".devcontainer", "use": "@vercel/python" }
-    ],
-    "routes": [{ "src": "/(.*)", "dest": "path/to/your/django/project/manage.py" }]
+  "version": 2,
+  "builds": [
+    { "src": ".devcontainer/Dockerfile", "use": "@vercel/static-build" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "manage.py" }
+  ],
+  "env": {
+    "VERCEL_DOCKER_BUILDER": "vercel/python"
   }
-  
+}
