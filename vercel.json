@@ -2,15 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "web_project/manage.py",
+        "src": "manage.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "web_project/manage.py"
+        "dest": "manage.py"
       }
     ]
   }
-   
+  
