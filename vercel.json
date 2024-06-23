@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": ".devcontainer/Dockerfile", "use": "@vercel/static-build" }
+    { "src": ".devcontainer/Dockerfile", "use": "@vercel/build-utils/docker" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "manage.py" }
