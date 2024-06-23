@@ -8,5 +8,10 @@
   ],
   "env": {
     "VERCEL_DOCKER_BUILDER": "vercel/python"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
   }
 }
