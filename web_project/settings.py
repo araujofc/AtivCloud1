@@ -25,7 +25,8 @@ SECRET_KEY = '4c0^4n-##mg$ziyn%#)qio^s2$t7bm4+^dahy1i1x$s$f^lnq%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ativ-cloud1-fabricio.vercel.app','localhost']
+ALLOWED_HOSTS = ['ativ-cloud1-fabricio.vercel.app','127.0.0.1', 'localhost', '0.0.0.0']
+
 
 
 # Application definition
